@@ -64,6 +64,7 @@
     "babel-core": "7.0.0-bridge.0"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.1.0",
     "@babel/polyfill": "^7.8.7",
     "@formatjs/intl-pluralrules": "^1.5.7",
     "antd": "^4.2.0",
@@ -74,6 +75,7 @@
     "compression": "1.7.4",
     "connected-react-router": "^6.8.0",
     "cross-env": "5.2.0",
+    "enquire-js": "^0.2.1",
     "express": "^4.17.1",
     "fontfaceobserver": "2.1.0",
     "history": "^4.10.1",

@@ -6,8 +6,8 @@ import ScrollElement from "rc-scroll-anim/lib/ScrollElement";
 import SvgMorphPlugin from "rc-tween-one/lib/plugin/SvgMorphPlugin";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
-import { Icon } from "antd";
-// import Demo from "./Demo";
+import { DownCircleOutlined } from "@ant-design/icons";
+import Demo from "./Demo";
 
 TweenOne.plugins.push(SvgMorphPlugin);
 
@@ -64,7 +64,7 @@ const Banner = () => {
             [`${bannerClassName}-demo`]: true,
           })}
         >
-          {/* <Demo /> */}
+          <Demo />
         </div>
         <QueueAnim
           type="bottom"
@@ -74,14 +74,9 @@ const Banner = () => {
           delay={300}
         >
           <h1 key="h1">BEER'S FAMILY</h1>
-          <h3 key="h3">
-            Cùng nhau yêu thương, cùng nhau chia sẻ.
-          </h3>
+          <h3 key="h3">Cùng nhau yêu thương, cùng nhau chia sẻ.</h3>
           <div key="button">
-            <Link
-              to="/"
-              className={`${bannerClassName}-text-button`}
-            >
+            <Link to="/" className={`${bannerClassName}-text-button`}>
               <FormattedMessage id="app.home.learn-more" />
               <i />
             </Link>
@@ -100,7 +95,7 @@ const Banner = () => {
                 duration: 900,
               }}
             >
-              <Icon type="down-circle-o" />
+              <DownCircleOutlined />
             </TweenOne>
           </div>
           <div className={`${bannerClassName}-mouse`} key="mouse">
