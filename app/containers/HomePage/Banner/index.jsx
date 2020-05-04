@@ -7,7 +7,7 @@ import SvgMorphPlugin from "rc-tween-one/lib/plugin/SvgMorphPlugin";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import { DownCircleOutlined } from "@ant-design/icons";
-import Demo from "./Demo";
+import Title from "./Title";
 
 TweenOne.plugins.push(SvgMorphPlugin);
 
@@ -64,7 +64,7 @@ const Banner = () => {
             [`${bannerClassName}-demo`]: true,
           })}
         >
-          <Demo />
+          <Title />
         </div>
         <QueueAnim
           type="bottom"
