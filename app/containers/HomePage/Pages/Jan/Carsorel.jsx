@@ -86,13 +86,10 @@ export default class Carsorel extends React.Component {
 
   render() {
     const intArray = this.getNextPrevNumber();
-    const thumbChildren = this.imgArray.map((img, i) => (
-      <span key={i}>
-        <i style={{ backgroundImage: `url(${img})` }} />
-      </span>
-    ));
     return (
       <BannerAnim
+        autoPlay
+        autoPlaySpeed={4000}
         onChange={this.onChange}
         onMouseEnter={this.onMouseEnter}
         onMouseLeave={this.onMouseLeave}
