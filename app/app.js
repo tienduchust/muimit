@@ -20,6 +20,7 @@ import history from 'utils/history';
 import "./styles";
 import 'sanitize.css/sanitize.css';
 import 'rc-texty/assets/index.css';
+import "rc-banner-anim/assets/index.css";
 
 
 // Import root app
