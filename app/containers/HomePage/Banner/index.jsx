@@ -64,7 +64,7 @@ const Banner = () => {
             [`${bannerClassName}-demo`]: true,
           })}
         >
-          <Title />
+          {/* <Title /> */}
         </div>
         <QueueAnim
           type="bottom"
@@ -78,7 +78,6 @@ const Banner = () => {
           <div key="button">
             <Link to="/" className={`${bannerClassName}-text-button`}>
               <FormattedMessage id="app.home.learn-more" />
-              <i />
             </Link>
           </div>
         </QueueAnim>
