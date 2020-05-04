@@ -86,12 +86,6 @@ function TopBar({ headerOpen, isMobile = true, setHeaderOpen, activeKey }) {
         >
           <Link to="/" key="logo">
             <img
-              className="logo-img"
-              alt="img"
-              height="24"
-              src="https://zos.alipayobjects.com/rmsportal/TOXWfHIUGHvZIyb.svg"
-            />
-            <img
               alt="img"
               height="14"
               src="images/Beer.png"

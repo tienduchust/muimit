@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
   p,
   label {
-    font-family: Roboto;
+    font-family: 'Josefin Sans', sans-serif;;
     line-height: 1.5em;
   }
 `;
