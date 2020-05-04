@@ -21,6 +21,7 @@ import "./styles";
 import 'sanitize.css/sanitize.css';
 import 'rc-texty/assets/index.css';
 
+
 // Import root app
 import App from 'containers/App';
 

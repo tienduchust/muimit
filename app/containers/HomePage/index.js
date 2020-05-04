@@ -12,6 +12,7 @@ import DocumentTitle from "react-document-title";
 import ScrollLink from "rc-scroll-anim/lib/ScrollLink";
 import Banner from "./Banner";
 import LastYear from "./Pages/LastYear";
+import Jan from "./Pages/Jan";
 
 const tweenAnim = {
   y: 30,
@@ -46,6 +47,7 @@ const HomePage = ({ className }) => {
         </div>
         <Banner />
         <LastYear tweenAnim={tweenAnim} />
+        <Jan tweenAnim={tweenAnim} />
       </div>
     </DocumentTitle>
   );
