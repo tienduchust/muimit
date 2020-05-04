@@ -11,6 +11,15 @@ import styled from "styled-components";
 import DocumentTitle from "react-document-title";
 import ScrollLink from "rc-scroll-anim/lib/ScrollLink";
 import Banner from "./Banner";
+import LastYear from "./Pages/LastYear";
+
+const tweenAnim = {
+  y: 30,
+  opacity: 0,
+  duration: 650,
+  type: "from",
+  ease: "easeOutQuad",
+};
 
 const HomePage = ({ className }) => {
   return (
@@ -36,6 +45,7 @@ const HomePage = ({ className }) => {
           <ScrollLink to="page3" showHeightActive="70%" toHash={false} />
         </div>
         <Banner />
+        <LastYear tweenAnim={tweenAnim} />
       </div>
     </DocumentTitle>
   );
