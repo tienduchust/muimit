@@ -84,13 +84,13 @@ module.exports = (options) => ({
         ],
       },
       {
-        test: /\.(jpg|png|gif)$/,
+        test: /\.(jpg|png|gif|JPG)$/,
         use: [
           {
             loader: "url-loader",
             options: {
               // Inline files smaller than 10 kB
-              limit: 10 * 1024,
+              // limit: 10 * 1024,
             },
           },
           {
