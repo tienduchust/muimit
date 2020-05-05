@@ -296,145 +296,50 @@
       right: 0;
     }
   }
-  .page2 {
-    height: 1200px;
-    position: relative;
-    .page {
-      height: 100%;
-    }
-    .home-anim-demo {
-      width: 100%;
-      margin-top: 72px;
-      & ul li {
-        float: left;
-        width: 30%;
-        background: @page-bg-color;
-        height: 360px;
-        box-shadow: 0 10px 16px fade(#000, 10);
-        border-radius: 6px;
-        overflow: hidden;
-        margin-bottom: 60px;
-        &:nth-child(3n + 2) {
-          margin: 0 5%;
-        }
-        & a {
-          color: #999;
-          display: block;
-          height: 100%;
-          & .home-anim-demo-img {
-            overflow: hidden;
-            height: 197px;
-          }
-          & h2 {
-            color: #666;
-            margin: 15px auto;
-          }
-          & .home-anim-demo-text {
-            padding: 0 10%;
-            & p {
-              line-height: 18px;
-              font-size: 12px;
-            }
-          }
-        }
-        position: relative;
-        will-change: transform, box-shadow;
-        // .page-pro();
-        transition: transform @animate-duration @ease-out,
-          box-shadow @animate-duration @ease-out;
-        &:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 12px 18px fade(#000, 15);
-        }
-      }
-    }
-    .home-button {
-      position: absolute;
-      margin: auto;
-      left: 0;
-      right: 0;
-      bottom: 80px;
-    }
-  }
-
-  .page3 {
-    height: 340px;
-    background: @bg-color;
-    width: 100%;
-    max-width: 100% !important;
-    overflow: hidden;
-    & .page-text {
-      margin: 80px auto;
-    }
-    & .home-button {
-      margin-top: 30px;
-    }
-  }
   .first {
     background-color: @bg-color-darker;
     .code-wrapper {
-      height: 40%;
-    }
-    .carousel-demo-wrapper {
-      position: relative;
-      background: @bg-color-darker;
-      overflow: hidden;
-      height: 500px;
-    }
-
-    .carousel-demo {
-      width: 100%;
-      height: 100%;
-    }
-
-    .carousel-wrapper {
-      position: absolute;
-      width: 250px;
-      height: 300px;
+      width: 95%;
+      max-width: 940px;
       margin: auto;
-      left: 0;
-      right: 0;
-      top: 120px;
-      padding-top: 350px;
-      margin-top: -350px;
-    }
-
-    .carousel {
-      position: relative;
-      width: 100%;
-      margin: auto;
-      height: 100%;
-    }
-
-    .carouselContent {
-      transform-style: preserve-3d;
-      width: 100%;
-    }
-
-    .itemWrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform-style: preserve-3d;
-      width: 100%;
-    }
-
-    .itemWrapper .rotateLayer .bgAndBlurLayer {
       border-radius: 8px;
       overflow: hidden;
-      background: #fff;
-      transition: filter 0.45s;
-      margin: auto;
+      position: absolute;
+      top: 22%;
+      left: 0;
+      right: 0;
+      height: 55%;
+      box-shadow: 0 5px 20px fade(#b9b9b9, 50);
+      .banner-user {
+        height: 100%;
+      }
+      .banner-user-elem {
+        text-align: center;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+      }
+      .banner-user-elem .banner-user-title {
+        color: gold;
+        font-weight: 700;
+        font-size: 32px;
+        top: 2%;
+      }
+      .banner-user-elem .banner-user-text {
+        top: 40%;
+      }
+      .banner-anim-elem .bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+      }
+      .custom-arrow-thumb {
+        height: 100%;
+      }
     }
-
-    .itemWrapper .rotateLayer .bgAndBlurLayer .contentLayer {
-      transition: opacity 0.65s;
-    }
-
-    .img-wrapper {
-      height: 300px;
-      background-size: cover;
-      background-position: center;
-    }
+    /* 通用样式, 下例 demo 单独使用都需要这块样式 */
   }
 }
