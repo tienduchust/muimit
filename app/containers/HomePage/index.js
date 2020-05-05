@@ -12,7 +12,7 @@ import DocumentTitle from "react-document-title";
 import ScrollLink from "rc-scroll-anim/lib/ScrollLink";
 import Banner from "./Banner";
 import LastYear from "./Pages/LastYear";
-import Jan from "./Pages/Jan";
+import First from "./Pages/First";
 
 const tweenAnim = {
   y: 30,
@@ -37,17 +37,12 @@ const HomePage = ({ className }) => {
             showHeightActive={["100%", "30%"]}
             toHash={false}
           />
-          <ScrollLink to="page1" showHeightActive="30%" toHash={false} />
-          <ScrollLink
-            to="page2"
-            showHeightActive={["30%", "70%"]}
-            toHash={false}
-          />
-          <ScrollLink to="page3" showHeightActive="70%" toHash={false} />
+          <ScrollLink title="Sinh nhật năm trước" to="lastYear" showHeightActive="30%" toHash={false} />
+          <ScrollLink title="Tháng 5/2019" to="first" showHeightActive="70%" toHash={false} />
         </div>
         <Banner />
         <LastYear tweenAnim={tweenAnim} />
-        <Jan tweenAnim={tweenAnim} />
+        <First tweenAnim={tweenAnim} />
       </div>
     </DocumentTitle>
   );
