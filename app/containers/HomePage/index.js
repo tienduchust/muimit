@@ -6,6 +6,7 @@
  */
 
 import React from "react";
+import _ from "lodash";
 import classnames from "classnames";
 import styled from "styled-components";
 import DocumentTitle from "react-document-title";
@@ -13,6 +14,7 @@ import ScrollLink from "rc-scroll-anim/lib/ScrollLink";
 import Banner from "./Banner";
 import LastYear from "./Pages/LastYear";
 import TimeLineItem from "./Pages/TimeLineItem";
+
 
 const tweenAnim = {
   y: 30,
@@ -235,6 +237,7 @@ const timeLine = {
     ],
   },
 };
+
 
 const HomePage = ({ className }) => {
   return (
