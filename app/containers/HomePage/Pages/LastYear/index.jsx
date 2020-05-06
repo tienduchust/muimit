@@ -1,13 +1,18 @@
-import React, {  } from "react";
+import React from "react";
 import OverPack from "rc-scroll-anim/lib/ScrollOverPack";
 import QueueAnim from "rc-queue-anim";
 import TweenOne from "rc-tween-one";
 import { FormattedMessage } from "react-intl";
 import ReactPlayer from "react-player";
+import classnames from "classnames";
 
 const LastYear = ({ tweenAnim }) => {
   return (
-    <div className="home-page-wrapper page1">
+    <div
+      className={classnames({
+        "home-page-wrapper timeLine": true,
+      })}
+    >
       <OverPack playScale={0.6} className="page vh" id="lastYear">
         <QueueAnim
           className="page-text"
@@ -26,7 +31,7 @@ const LastYear = ({ tweenAnim }) => {
           </p>
         </QueueAnim>
         <TweenOne
-          className="code-wrapper"
+          className="carousel"
           animation={{
             ...tweenAnim,
             delay: 200,
