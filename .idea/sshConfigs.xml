@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="35.232.221.179" id="6ac4a7e7-6b2f-4e2b-aae0-4842fd876fe0" keyPath="$USER_HOME$/.ssh/my-ssh-key" port="22" nameFormat="DESCRIPTIVE" username="ductt.va" />
+    </configs>
+  </component>
+</project>

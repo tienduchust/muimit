@@ -64,6 +64,7 @@ const Banner = () => {
             [`${bannerClassName}-demo`]: true,
           })}
         >
+            CHÚC MỪNG SINH NHÂT VỢ CỦA ANH !!!
           {/* <Title /> */}
         </div>
         <QueueAnim

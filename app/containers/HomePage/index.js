@@ -15,7 +15,6 @@ import Banner from "./Banner";
 import LastYear from "./Pages/LastYear";
 import TimeLineItem from "./Pages/TimeLineItem";
 
-
 const tweenAnim = {
   y: 30,
   opacity: 0,
@@ -237,7 +236,6 @@ const timeLine = {
     ],
   },
 };
-
 
 const HomePage = ({ className }) => {
   return (
