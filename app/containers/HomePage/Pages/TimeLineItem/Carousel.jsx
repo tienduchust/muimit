@@ -9,7 +9,7 @@ const Carousel = ({ imgArray }) => {
     <BannerAnim
       autoPlay
       ease="easeInOutExpo"
-      autoPlaySpeed={5000}
+      autoPlaySpeed={8000}
       prefixCls="custom-arrow-thumb"
     >
       {_.map(imgArray, (img, imgId) => {

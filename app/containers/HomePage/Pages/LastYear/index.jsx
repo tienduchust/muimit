@@ -39,18 +39,25 @@ const LastYear = ({ tweenAnim }) => {
           key="code"
         >
           <ReactPlayer
-            autoPlay
-            muted={true}
             volume={1}
             title="Sinh nhật Vân Anh"
             controls
             width="100%"
             height="100%"
             url="https://www.youtube.com/embed/_EyimSxAuWw"
-            playing
           />
         </TweenOne>
       </OverPack>
+      <div
+        style={{
+          bottom: 0,
+          backgroundImage: "url(https://fleur.qodeinteractive.com/wp-content/uploads/2016/05/h1-parallax-1.jpg)",
+          color: "#656565",
+        }}
+      >
+        CHÚC MỪNG SINH NHẬT VỢ YÊU. <br />
+        <small>LUÔN XINH ĐẸP, LUÔN TƯƠI CƯỜI VÀ LUÔN BÊN CANH ANH NHÉ</small>
+      </div>
     </div>
   );
 };
