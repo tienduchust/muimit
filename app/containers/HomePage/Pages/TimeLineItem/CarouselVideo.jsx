@@ -6,7 +6,7 @@ const { Element } = BannerAnim;
 const BgElement = Element.BgElement;
 const CarouselVideo = ({ videos }) => {
   return (
-    <BannerAnim ease="easeInOutExpo" prefixCls="custom-arrow-thumb">
+    <BannerAnim type="across" ease="easeInSine" prefixCls="custom-arrow-thumb">
       {_.map(videos, (video, videoId) => {
         return (
           <Element key={videoId} prefixCls="banner-user-elem">

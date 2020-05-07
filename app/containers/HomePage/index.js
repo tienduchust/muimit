@@ -226,11 +226,11 @@ const timeLine = {
     hasVideo: true,
     videos: [
       {
-        url: "https://youtu.be/v-XZjYPozA8",
+        url: "http://youtu.be/v-XZjYPozA8",
         title: "Khổ vì ăn uống ở nhà Chồng.",
       },
       {
-        url: "https://youtu.be/AybihkiD2Jo",
+        url: "http://youtu.be/AybihkiD2Jo",
         title: "Vân anh đấm bốc.",
       },
     ],
@@ -261,6 +261,7 @@ const HomePage = ({ className }) => {
           {_.map(timeLine, (time, timeId) => {
             return (
               <ScrollLink
+                key={timeId}
                 title={time.titleText}
                 to={timeId}
                 showHeightActive="70%"
@@ -272,6 +273,7 @@ const HomePage = ({ className }) => {
         <Banner />
         <LastYear tweenAnim={tweenAnim} />
         {_.map(timeLine, (time, timeId) => {
+          console.log(timeId);
           return (
             <TimeLineItem
               key={timeId}

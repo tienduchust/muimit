@@ -44,7 +44,7 @@ const LastYear = ({ tweenAnim }) => {
             controls
             width="100%"
             height="100%"
-            url="https://www.youtube.com/embed/_EyimSxAuWw"
+            url="http://youtu.be/_EyimSxAuWw"
           />
         </TweenOne>
       </OverPack>

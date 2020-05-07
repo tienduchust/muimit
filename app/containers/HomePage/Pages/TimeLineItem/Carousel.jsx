@@ -2,14 +2,16 @@ import React from "react";
 import _ from "lodash";
 import BannerAnim from "rc-banner-anim";
 import TweenOne from "rc-tween-one";
+import IMG_01 from "images/Eighth/IMG_01.JPG";
 const { Element } = BannerAnim;
 const BgElement = Element.BgElement;
 const Carousel = ({ imgArray }) => {
   return (
     <BannerAnim
+      type={["verticalOverlay", "acrossOverlay", "across"]}
       autoPlay
       ease="easeInOutExpo"
-      autoPlaySpeed={8000}
+      autoPlaySpeed={4000}
       prefixCls="custom-arrow-thumb"
     >
       {_.map(imgArray, (img, imgId) => {
@@ -18,23 +20,19 @@ const Carousel = ({ imgArray }) => {
             <BgElement
               key="bg"
               className="bg"
-              style={{
-                backgroundImage: `url(${img.src})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            />
+              // style={{
+              //   backgroundImage: `url(${img.src})`,
+              //   backgroundSize: "cover",
+              //   backgroundPosition: "center",
+              // }}
+            >
+              <img src={IMG_01}  alt="IMG"/>
+            </BgElement>
             <TweenOne
               className="banner-user-title"
-              animation={{ y: 30, opacity: 0, type: "from" }}
+              animation={{ delay: 200, y: 30, opacity: 0, type: "from" }}
             >
               {img.title}
-            </TweenOne>
-            <TweenOne
-              className="banner-user-text"
-              animation={{ y: 30, opacity: 0, type: "from", delay: 100 }}
-            >
-              {img.description}
             </TweenOne>
           </Element>
         );

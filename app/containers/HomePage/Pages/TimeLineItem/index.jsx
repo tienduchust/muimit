@@ -17,25 +17,16 @@ const TimeLineItem = ({
   hasVideo,
   videos,
 }) => {
-  const [mode, setMode] = useState("leave");
-  const _handleChangeOverPack = useCallback(
-    (type) => {
-      setTimeout(() => {
-        setMode(type.mode);
-      }, 100);
-    },
-    [setMode]
-  );
+  const [mode, setMode] = useState("enter");
   return (
     <div
+      key={timeLineId}
       className={classnames({
         "home-page-wrapper timeLine": true,
         active: isActive,
       })}
     >
-      <OverPack
-        onChange={_handleChangeOverPack}
-        playScale={0.6}
+      <div
         className={classnames({
           "page vh": true,
           hasVideo: hasVideo,
@@ -62,7 +53,7 @@ const TimeLineItem = ({
                 ...tweenAnim,
                 delay: 200,
               }}
-              key="code"
+              key="image"
             >
               <Carousel imgArray={imgArray} />
             </TweenOne>
@@ -73,14 +64,14 @@ const TimeLineItem = ({
                   ...tweenAnim,
                   delay: 200,
                 }}
-                key="code"
+                key="video"
               >
                 <CarouselVideo videos={videos} />
               </TweenOne>
             )}
           </>
         )}
-      </OverPack>
+      </div>
       <div
         style={{
           bottom: 0,

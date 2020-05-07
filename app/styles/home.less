@@ -157,7 +157,7 @@
       padding: 0 24px;
       display: grid;
       margin: 40px auto;
-      grid-template-rows: min-content minmax(min-content, 60%);
+      grid-template-rows: min-content auto;
     }
     & h1 {
       font-weight: bold;
@@ -340,7 +340,7 @@
       }
     }
     .hasVideo {
-      grid-template-rows: min-content auto auto;
+      grid-template-rows: min-content auto minmax(35%, max-content);
       grid-row-gap: 10px;
     }
   }
