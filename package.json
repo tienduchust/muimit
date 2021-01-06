@@ -69,7 +69,7 @@
     "@formatjs/intl-pluralrules": "^1.5.7",
     "antd": "^4.2.0",
     "antd-mobile": "^2.3.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "chalk": "^2.4.2",
     "classnames": "^2.2.6",
     "compression": "1.7.4",
